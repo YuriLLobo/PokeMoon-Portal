@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 
+/* RESET CSS */
+
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +14,8 @@ body{
     min-width: 100vh
 }
 
+/* HEADER */
+
 .header-container{
     background-color: #fff;
     padding: 15px 0;
@@ -20,7 +24,6 @@ body{
     justify-content: space-between;
     
 }
-
 
 .logo{
     margin-left: 144%;
@@ -56,6 +59,8 @@ body{
     padding: 15px;
 }
 
+/* BANNER AREA */
+
 .slider{
     display: flex;
     justify-content: center;
@@ -65,35 +70,134 @@ body{
     width: 1100px;
 }
 
+
+/* MAIN AREA*/
+
 .main-area{
-    border: 1px solid red;
+    
     width: 1100px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-.main-area h1{
+.title{
+    display: flex;
+    width: 1100px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    
+}
+
+.title h1{
+    margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     padding: 10px;
+    
 }
+
+ /* FALTA TERMINAR O DE ESTILIZAR TITULO */
 
 .posts-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-    width: 600px;
+    width: 800px;
+    
 }
 
 .box{
-    background-color: #fff;
+    width: 370px;
     padding: 10px;
     border: 1px solid #e7e5e5;
+    font-family: 'Roboto', sans-serif;
 }
 
 .box img{
+    display: flex;
+    width: 100%;
     width: 350px;
+    height: 200px;
+    margin-bottom: none;
+    bottom: 5px;
 }
+
+.content{
+    background-color: #fff;
+    width: 350px;
+    height: 100px;
+    border: 1px solid #ccc;
+    
+}
+
+.content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box-footer{
+    display: flex;
+    color: #209bd4;
+    font-size: 12px;
+    justify-content: flex-start;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+.side-bar{
+    width: 300px;
+    
+}
+
+.telegram-title{
+    background-color: #209bd4;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+  
+
 
 .telegram img{
     height: 400px;
-    margin-left: 10px;
+    
 }
+
+
+
+
+/* FALTA TERMINAR O FOOTER */
+
+
+
+
+
+/* RESPONSIViADE */
+
+@media screen and (max-width: 1200px) {
+    .search{
+        display: none;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 1080px) {
+   
+    .side-bar{
+        display: none;
+    }
+
+    .posts-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .box{
+        width: 400px;
+    }
+}
+
+/* FALTA TERMINAR O RESPONSIVO*/
